@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Internet Safety</title>
+    <p>check the messages and texts you receive</p>
+<script>
+    function checkText() {
+               var userInput = document.getElementById('userInput').value.toLowerCase();
+               var badWords = ['ass','bastard','bitch','bollocks','boner','bugger','bullshit','chink','cock','coon','crap','cunt','damn','dick','dildo','douche','dyke','fag','faggot','fuck','fucker','goddamn','gook','hell','homo','idiot','jerk','jizz','kike','kunt','lesbo','mick','motherfucker','nigga','nigger','piss','pissed','prick','pussy','queer','retard','scumbag','shit','shite','shithead','shithole','skank','slut','spic','tard','tit','twat','wanker','whore','wop','arse','asshole','balls','bint','bloody','bugger','chode','cholo','clit','coonass','cum','cumbubble','dickhead','dipshit','dumbass','fanny','feck','flamer','gash','gonads','handjob','jerkoff','knob','minge','muff','nutjob','paki','pecker','pissflap','poontang','prat','punani','puto','schlong','shag','shitehawk','spunk','tits','tosser','tramp','turd','wazzock','wog','yob','zipperhead','kill','suicide','nude']; // Add your list of prohibited words here
+
+               var suspicious = false;
+               for (var i = 0; i < badWords.length; i++) {
+                   if (userInput.includes(badWords[i])) {
+                        suspicious = true;
+                        break;
+                    }
+                }
+
+               var resultLabel = document.getElementById('resultLabel');
+               if (suspicious) {
+                   resultLabel.innerText = 'Suspicious';
+               } else {
+                   resultLabel.innerText = 'Not suspicious';
+               }
+           }
+</script>
+</html>
+<body>
+        <h1>Internet Safety</h1>
+        <label for="userInput">Put your text here:</label><br>
+        <input type="text" id="userInput"><br>
+        <button onclick="checkText()">Check</button><br>
+        <p id="resultLabel"></p>
+    <meta charset="UTF-8">
+</body>
+

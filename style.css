@@ -11,3 +11,7 @@ body {
     font-size: 52px;
      white-space: nowrap;
 }
+.bold-italic {
+    font-weight: bold;
+    font-style: italic;
+}

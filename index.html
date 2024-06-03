@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <head>
-         <link rel="stylesheet" type="text/css" href="style.css">
-<script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
     function checkText() {
                var userInput = document.getElementById('userInput').value.toLowerCase();
                var badWords = ['ass','suicide','sex','dick,'bastard','bitch','bollocks','boner','bugger','bullshit','chink','cock','coon','crap','cunt','damn','dick','dildo','douche','dyke','fag','faggot','fuck','fucker','goddamn','gook','hell','homo','idiot','jerk','jizz','kike','kunt','lesbo','mick','motherfucker','nigga','nigger','piss','pissed','prick','pussy','queer','retard','scumbag','shit','shite','shithead','shithole','skank','slut','spic','tard','tit','twat','wanker','whore','wop','arse','asshole','balls','bint','bloody','bugger','chode','cholo','clit','coonass','cum','cumbubble','dickhead','dipshit','dumbass','fanny','feck','flamer','gash','gonads','handjob','jerkoff','knob','minge','muff','nutjob','paki','pecker','pissflap','poontang','prat','punani','puto','schlong','shag','shitehawk','spunk','tits','tosser','tramp','turd','wazzock','wog','yob','zipperhead','kill','suicide','nude']; 
-
                var suspicious = false;
                for (var i = 0; i < badWords.length; i++) {
                    if (userInput.includes(badWords[i])) {
@@ -25,8 +24,8 @@
                }
            }
 </script> 
-</head> 
-   <body>
+</head>
+    <body>
         <h1 class="title">Internet Safety</h1>
         <p>check the messages and texts you receive</p>
         <label for="userInput">Put your text here:</label><br>

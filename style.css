@@ -1,17 +1,25 @@
 body {
     background-color: #f7e6e1;
 }
-.container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+
 .title {
-    font-size: 52px;
+    font-size: 32px;
      white-space: nowrap;
 }
 .bold-italic {
     font-weight: bold;
     font-style: italic;
+    color:#214a57 ;
 }
+container {
+    display: flex;
+    height: 100%;
+}
+
+.left, .right {
+    flex: 1;
+}
+
+.divider {
+    width: 1px;
+    background-color:#214a57 ;

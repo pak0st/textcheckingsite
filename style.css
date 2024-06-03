@@ -11,19 +11,6 @@ body {
     font-style: italic;
     color:#214a57 ;
 }
-.container {
-    display: flex;
-    height: 100%;
-}
-
-.left, .right {
-    flex: 1;
-}
-
-.divider {
-    width: 8px;
-    background-color:#214a57 ;
-}
-p {
+.p {
     color:#214a57; 
 }

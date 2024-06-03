@@ -11,7 +11,7 @@ body {
     font-style: italic;
     color:#214a57 ;
 }
-container {
+.container {
     display: flex;
     height: 100%;
 }
@@ -23,3 +23,4 @@ container {
 .divider {
     width: 1px;
     background-color:#214a57 ;
+}

@@ -18,11 +18,11 @@
                     }
                 }
         for (var j = 0; j < badSentences.length; j++) {
-        if (userInput.includes(badSentences[j].toLowerCase())) {
-            hasBadSentence = true;
-            break;
-        }
-    } 
+            if (userInput.includes(badSentences[j].toLowerCase())) {
+                 hasBadSentence = true;
+                 break;
+              }
+         } 
                var resultLabel = document.getElementById('resultLabel');
                if (suspicious) {
                    resultLabel.innerText = 'Suspicious! \n We believe that this message may be dangerous';

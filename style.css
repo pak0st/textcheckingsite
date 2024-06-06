@@ -15,3 +15,8 @@ body {
 p {
     color:#214a57; 
 }
+.bold-italicred {
+    font-weight: bold;
+    font-style: italic;
+    color:#e30000 ;
+}
